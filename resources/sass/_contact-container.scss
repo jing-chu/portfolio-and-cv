@@ -1,0 +1,23 @@
+.contact-container{
+    height:60vh;
+    display:flex;
+    flex-direction: column;
+    .contact{
+        padding: 0 8rem;
+        color: $icon-color;
+        font-weight:bold;
+    }
+    .greeting{
+        padding: 0 8rem;
+        font-size: 3rem;
+    }
+}
+
+.detail-contact-info{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $light-pink;
+    height: 30vh;
+}
+

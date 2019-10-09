@@ -1,0 +1,22 @@
+.name-menu{
+    width: 90%;
+    display: flex;
+    padding:0 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    height: 20vh;
+}
+
+.name{
+    font-size: 2rem;  
+    font-weight: bold; 
+}
+
+#menu{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
