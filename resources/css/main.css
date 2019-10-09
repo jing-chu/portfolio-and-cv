@@ -16,7 +16,7 @@
 
 #menu {
   width: 35px;
-  height: 5px;
+  height: 4px;
   background-color: black;
   margin: 6px 0;
 }
@@ -48,7 +48,7 @@
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
   color: #8d8d8d;
 }
@@ -98,21 +98,32 @@
   flex-direction: column;
 }
 .contact-container .contact {
-  padding: 0 8rem;
+  padding: 0 12rem;
   color: #8d8d8d;
   font-weight: bold;
 }
 .contact-container .greeting {
-  padding: 0 8rem;
+  padding: 0 12rem;
   font-size: 3rem;
+  margin: 1rem 0;
 }
 
 .detail-contact-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: #faeaea;
   height: 30vh;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
+.detail-contact-info .phone-info {
+  padding: 2rem 6rem 3rem 12rem;
+}
+.detail-contact-info .email-info {
+  padding: 2rem 6rem;
+}
+.detail-contact-info .address-info {
+  padding: 2rem 6rem;
 }
 
 body {

@@ -3,21 +3,39 @@
     display:flex;
     flex-direction: column;
     .contact{
-        padding: 0 8rem;
+        padding: 0 12rem;
         color: $icon-color;
         font-weight:bold;
     }
     .greeting{
-        padding: 0 8rem;
+        padding: 0 12rem;
         font-size: 3rem;
+        margin: 1rem 0;
     }
 }
+
+
 
 .detail-contact-info{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: $light-pink;
     height: 30vh;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
+    
+    .phone-info{
+        padding:2rem 6rem 3rem 12rem;
+       
+    }
+    .email-info{
+        padding:2rem 6rem;
+       
+    }
+    .address-info{
+        padding:2rem 6rem;
+        
+    }
+    
 }
 
