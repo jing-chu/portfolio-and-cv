@@ -168,10 +168,11 @@
 }
 
 .profile {
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 11rem;
   border-radius: 50%;
-  margin: 4rem 4rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .about-me, .cv-contact {
@@ -215,20 +216,20 @@
   margin-left: 1rem;
 }
 
+.info-title-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .info-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .info-bold {
   font-weight: bolder;
-  border: 1px solid red;
-}
-
-.detail-list {
-  border: 1px solid red;
 }
 
 /* Style the tab */
