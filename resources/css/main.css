@@ -212,13 +212,23 @@
 }
 
 .info-box {
-  margin: 1rem 1rem;
+  margin-left: 1rem;
 }
 
 .info-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid red;
+}
+
+.info-bold {
+  font-weight: bolder;
+  border: 1px solid red;
+}
+
+.detail-list {
+  border: 1px solid red;
 }
 
 /* Style the tab */
