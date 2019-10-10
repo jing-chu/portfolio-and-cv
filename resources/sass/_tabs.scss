@@ -1,9 +1,9 @@
 /* Style the tab */
 .tab {
     float: left;
-    width: 15%;
-    height: 80vh;
-    margin-left:4rem;
+    width: 12%;
+    height: 20vh;
+    margin-left:4rem; 
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -34,9 +34,12 @@
 /* Style the tab content */
 .tabcontent {
     float: left;
-    padding: 0px 12px;
     border: 1px solid blue;
     width: 70%;
     border-left: none;
-    height: 80vh;
+    
+    display:flex;
+    flex-direction: row;
+   
+
 }
