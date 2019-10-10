@@ -161,6 +161,49 @@
   padding: 2rem 6rem;
 }
 
+/* Style the tab */
+.tab {
+  float: left;
+  width: 15%;
+  height: 80vh;
+  margin-left: 4rem;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #faeaea;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #faeaea;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid blue;
+  width: 70%;
+  border-left: none;
+  height: 80vh;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
