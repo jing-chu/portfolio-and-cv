@@ -181,7 +181,7 @@
 }
 
 .info-type {
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   border-bottom: 2px solid black;
@@ -195,6 +195,30 @@
 .fa-map-marker-alt, .fa-phone-volume, .fa-at {
   font-size: 1.2rem;
   padding-right: 0.2rem;
+}
+
+.experience {
+  padding: 1rem;
+}
+
+.education {
+  height: 40vh;
+  padding: 1rem;
+}
+
+.training {
+  height: 40vh;
+  padding: 1rem;
+}
+
+.info-box {
+  margin: 1rem 1rem;
+}
+
+.info-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Style the tab */
@@ -217,7 +241,7 @@
   text-align: right;
   cursor: pointer;
   transition: 0.3s;
-  background-color: none;
+  background-color: white;
 }
 
 /* Change background color of buttons on hover */
@@ -233,9 +257,7 @@
 /* Style the tab content */
 .tabcontent {
   float: left;
-  border: 1px solid blue;
-  width: 70%;
-  border-left: none;
+  width: 75%;
   display: flex;
   flex-direction: row;
 }
