@@ -1,8 +1,9 @@
+ /* phones */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-    /* phones */
-
+   
+    /* index page */
     .name{
         font-size: 1rem;  
     }
@@ -45,12 +46,14 @@ and (max-device-width : 480px) {
     
     .right-icons{ 
         flex-direction:column; 
+        width: 100%;
+        
     }
 
     .icons-container{
         padding-top: 0rem;
         margin: 0 auto;
-        
+       
     }
 
     .vl{
@@ -59,6 +62,62 @@ and (max-device-width : 480px) {
         
     }
 
+     /* cv page */
+     .tabs-container{
+        display:flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    .tab {
+        display:flex;
+        flex-direction: row;
+        float: none;
+        width: 100%;
+        justify-content: space-around;
+        height: auto;
+        margin:0;
+    }
+
+    .tablink {
+        color:$github;
+        font-size: 1rem;
+        padding:0;
+        margin:0;
+    }
+
+    .tabcontent {
+        float: none;
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+       
+    }  
     
+    .tab-left{
+        width:100%;
+        background-color: $light-pink;
+    }
+
+    .tab-right{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .info-type{
+        margin: 0.5rem;
+        font-size: 1rem;
+        font-weight: bolder;
+        border-bottom: 2px solid $github;
+    }
+
+    .info-title{
+        flex-direction: column;
+    }
+   
+    .about-me,.cv-contact{
+        padding:1rem;
+    }
 
 }

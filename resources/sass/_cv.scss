@@ -3,6 +3,7 @@
 .tab-left{
     width:40vw;
     background-color: $light-pink;
+    height:auto;
 }
 
 .profile{
@@ -16,7 +17,7 @@
 }
 
 .about-me,.cv-contact{
-    height:30vh;
+    height:auto;
     display:flex;
     flex-direction: column;
 }
@@ -43,17 +44,17 @@
 
 
 .experience{
-    
+    height: auto;
     padding: 1rem;
 }
 
 .education{
-    height: 40vh;
+    height: auto;
     padding: 1rem;
 }
 
 .training{
-    height: 40vh;
+    height: auto;
     padding: 1rem;
 }
 
