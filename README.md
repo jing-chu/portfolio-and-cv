@@ -10,11 +10,11 @@ Future Milestones:
 2. To finish the responsive design on other devices, like tablet and wide screen
 
 3. To add the JavaScript in program to add those functions
- **Off-Canvas Menu** 
- **Toggleable Tabs**
- **An Arrow Menu Button**
+ **Off-Canvas Menu**,  
+ **Toggleable Tabs**, 
+ **An Arrow Menu Button**, 
 
-4. To punish the content of CV
+4. To polish the content of CV
 
 
 
