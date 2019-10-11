@@ -16,6 +16,8 @@
     
 }
 
+/*Style four conact icons*/
+
 .icons-container{
     padding-top: 3rem;
 }
@@ -31,4 +33,16 @@
     font-size: 1.5rem;
     margin: 0 1rem;
     color: $icon-color;
+}
+
+.fa-linkedin-in:hover{
+    color: $linkedin;
+}
+
+.fa-github:hover{
+    color: $github;
+}
+
+.fa-stack-overflow:hover{
+    color:$stackoverflow; 
 }

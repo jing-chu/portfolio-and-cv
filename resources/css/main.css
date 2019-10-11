@@ -14,10 +14,11 @@
   font-weight: bold;
 }
 
+/*style off-canvas menu*/
 #menu {
   width: 35px;
   height: 4px;
-  background-color: black;
+  background-color: #24282e;
   margin: 6px 0;
 }
 
@@ -37,6 +38,7 @@
   color: #8d8d8d;
 }
 
+/*Style four conact icons*/
 .icons-container {
   padding-top: 3rem;
 }
@@ -51,6 +53,18 @@
   font-size: 1.5rem;
   margin: 0 1rem;
   color: #8d8d8d;
+}
+
+.fa-linkedin-in:hover {
+  color: #0376b4;
+}
+
+.fa-github:hover {
+  color: #24282e;
+}
+
+.fa-stack-overflow:hover {
+  color: #e88239;
 }
 
 .info-portfolios {
@@ -76,6 +90,7 @@
   padding: 200px 0;
 }
 
+/*style portfolios part*/
 .portfolios-container {
   width: 90%;
   display: flex;
@@ -162,9 +177,8 @@
 }
 
 .tab-left {
-  width: 20vw;
+  width: 40vw;
   background-color: #faeaea;
-  padding: 0;
 }
 
 .profile {
@@ -172,7 +186,7 @@
   height: 11rem;
   border-radius: 50%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .about-me, .cv-contact {
@@ -184,18 +198,18 @@
 .info-type {
   margin: 1rem 1rem;
   font-size: 1.5rem;
-  font-weight: bold;
-  border-bottom: 2px solid black;
+  font-weight: bolder;
+  border-bottom: 2px solid #24282e;
 }
 
 .info {
   font-size: 1rem;
-  padding: 0.2rem 2rem;
+  padding: 0.2rem 1rem;
 }
 
 .fa-map-marker-alt, .fa-phone-volume, .fa-at {
   font-size: 1.2rem;
-  padding-right: 0.2rem;
+  padding-right: 10px;
 }
 
 .experience {
@@ -243,7 +257,7 @@
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: block;
-  color: black;
+  color: #24282e;
   font-size: 1rem;
   padding: 1rem 2rem;
   width: 100%;
@@ -268,7 +282,7 @@
 /* Style the tab content */
 .tabcontent {
   float: left;
-  width: 75%;
+  width: 70%;
   display: flex;
   flex-direction: row;
 }

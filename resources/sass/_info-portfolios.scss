@@ -23,6 +23,8 @@
     padding: 200px 0;
 }
 
+/*style portfolios part*/
+
 .portfolios-container{
     width: 90%;
     display: flex;
@@ -66,7 +68,7 @@
 }
 
 .text { 
-    color: white;
+    color: $white;
     font-size: 3rem;
     font-weight: bolder;
     position: absolute;

@@ -9,7 +9,7 @@
   /* Style the buttons that are used to open the tab content */
   .tab button {
     display: block;
-    color: black;
+    color:$github;
     font-size: 1rem;
     padding: 1rem 2rem;
     width: 100%;
@@ -18,7 +18,7 @@
     text-align: right;
     cursor: pointer;
     transition: 0.3s;
-    background-color: white;
+    background-color: $white;
 }
 
 /* Change background color of buttons on hover */
@@ -34,7 +34,7 @@
 /* Style the tab content */
 .tabcontent {
     float: left;
-    width: 75%;
+    width: 70%;
     display:flex;
     flex-direction: row;
    
