@@ -332,6 +332,8 @@
   .right-icons {
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+    align-items: center;
   }
 
   .icons-container {
@@ -378,6 +380,7 @@
   .tab-left {
     width: 100%;
     background-color: #faeaea;
+    align-items: center;
   }
 
   .tab-right {
@@ -400,6 +403,8 @@
   .about-me, .cv-contact {
     padding: 1rem;
   }
+
+  /* contact page */
 }
 body {
   margin: 0;
