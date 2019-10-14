@@ -25,7 +25,6 @@
 .right-icons {
   width: 90%;
   display: flex;
-  padding: 0 1rem;
   flex-direction: row;
   justify-content: space-between;
   height: auto;
@@ -186,8 +185,7 @@
   width: 10rem;
   height: 11rem;
   border-radius: 50%;
-  margin: 0 auto;
-  padding: 3rem;
+  padding: 3rem 5rem;
 }
 
 .about-me, .cv-contact {
@@ -380,7 +378,8 @@
   .tab-left {
     width: 100%;
     background-color: #faeaea;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .tab-right {
@@ -402,9 +401,39 @@
 
   .about-me, .cv-contact {
     padding: 1rem;
+    width: 100%;
   }
 
   /* contact page */
+  .contact-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-container .contact {
+    padding: 0 2rem;
+  }
+  .contact-container .greeting {
+    padding: 0 2rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .detail-contact-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #faeaea;
+    height: auto;
+  }
+  .detail-contact-info .phone-info {
+    padding: 2rem 4rem;
+  }
+  .detail-contact-info .email-info {
+    padding: 2rem 4rem;
+  }
+  .detail-contact-info .address-info {
+    padding: 2rem 4rem;
+  }
 }
 body {
   margin: 0;

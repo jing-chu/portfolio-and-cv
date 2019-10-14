@@ -98,7 +98,8 @@ and (max-device-width : 480px) {
     .tab-left{
         width:100%;
         background-color: $light-pink;
-        align-items: center;
+        display:flex;
+        flex-direction: column;
     }
 
     .tab-right{
@@ -120,9 +121,50 @@ and (max-device-width : 480px) {
    
     .about-me,.cv-contact{
         padding:1rem;
+        width:100%;
     }
 
 /* contact page */
+
+.contact-container{
+    height:auto;
+    display:flex;
+    flex-direction: column;
+
+    .contact{
+    padding: 0 2rem;
+    }
+
+    .greeting{
+    padding: 0 2rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+    }
+}
+
+.detail-contact-info{
+    display:flex;
+    flex-direction: column;
+    background-color: $light-pink;
+    height: auto;
+    
+    .phone-info{
+        padding:2rem 4rem;
+        
+       
+    }
+    .email-info{
+        padding:2rem 4rem;
+        
+       
+    }
+    .address-info{
+        padding:2rem 4rem;
+     
+        
+    }
+    
+}
 
 
 }
