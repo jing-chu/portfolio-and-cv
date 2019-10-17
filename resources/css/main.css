@@ -1,17 +1,23 @@
 .name-menu {
-  width: 90%;
+  width: 100%;
   display: flex;
-  padding: 0 1rem;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  height: 20vh;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .name {
   font-size: 2rem;
   font-weight: bold;
+  padding-left: 6rem;
 }
 
 /*style off-canvas menu*/
@@ -20,6 +26,45 @@
   height: 4px;
   background-color: #24282e;
   margin: 6px 0;
+}
+
+.menu {
+  cursor: pointer;
+  padding-right: 6rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #faeaea;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 6rem;
+}
+
+.sidenav a {
+  padding: 1rem 1rem 1rem 5rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #818181;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 4rem;
+  margin-left: 50px;
 }
 
 .right-icons {
@@ -83,6 +128,7 @@
   width: 100%;
   height: auto;
   background-image: url("../background.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-bottom: 2rem;
@@ -101,7 +147,6 @@
 
 .project {
   width: 25vw;
-  height: 50vh;
   margin: 2rem 0;
   position: relative;
 }
@@ -166,17 +211,26 @@
   font-family: "Ubuntu", sans-serif;
 }
 .detail-contact-info .phone-info {
-  padding: 2rem 6rem 3rem 12rem;
+  padding: 3rem 6rem 3rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .detail-contact-info .email-info {
-  padding: 2rem 6rem;
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .detail-contact-info .address-info {
-  padding: 2rem 6rem;
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tab-left {
-  width: 40vw;
+  width: 300px;
   background-color: #faeaea;
   height: auto;
 }

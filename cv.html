@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="resources/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="resources/javascript/main.js"></script>
     <title>Jing-CV and Cover letter</title>
 </head>
 <body>
     <!--Header-->
-    <header class="name-menu">
+    <header class="navbar">
         <p class="name">Jing Jin</p>
-        <div class="menu">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Portfolio</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu" onclick="openNav()">
             <div id="menu" class="bar1"></div>
             <div id="menu" class="bar2"></div>
             <div id="menu" class="bar3"></div>        
@@ -23,8 +30,8 @@
     <!--two TABs-->
     <main class="tabs-container">
         <div class="tab">
-            <button class="tablink" id="defaultOpen">Cover Letter</button>
-            <button class="tablink">CV</button>
+            <button class="tablinks" id="defaultOpen" onclick="openDoc(event, 'coverLetter')">Cover Letter</button>
+            <button class="tablinks" onclick="openDoc(event, 'cv')">CV</button>
         </div>
 
         <!-- COVER LETTER TAB

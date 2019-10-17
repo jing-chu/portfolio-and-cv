@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="resources/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="resources/javascript/main.js"></script>
     <title>Jing-portfolio</title>
 </head>
 <body>
     <!--Header-->
     <header class="name-menu">
+        <div class="navbar">
         <p class="name">Jing Jin</p>
-        <a href="cv.html" class="temp">My CV Page</a>
-        <a href="contact.html" class="temp">My Contact Page</a>
-        <div class="menu">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Portfolio</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu" onclick="openNav()">
             <div id="menu" class="bar1"></div>
             <div id="menu" class="bar2"></div>
             <div id="menu" class="bar3"></div>        
         </div>
-    </header>
-
-    <!--Between Header and Footer-->
-
-    <!--Self Infroduction-->
-    <main class="info-portfolios">
+        </div>
         <div class="info-container">
             <p class="info-greeting">Hello, my name is Jing. I started my Web Development training at BeCode in Sep. 2019. I have learned HTML, CSS, and SASS.</p>
         </div>
-        
+    </header>
 
+   
+
+    <!--Self Infroduction-->
+    <main class="info-portfolios">
+       
      <!--Portfolio Display-->
         <div class="portfolios-container" id="portfolios-container">
             <div class="project">
