@@ -97,7 +97,7 @@ and (max-device-width : 480px) {
     
     .tab-left{
         width:100%;
-        background-color: $light-pink;
+        background-color: $lightPink;
         display:flex;
         flex-direction: column;
     }
@@ -145,7 +145,7 @@ and (max-device-width : 480px) {
 .detail-contact-info{
     display:flex;
     flex-direction: column;
-    background-color: $light-pink;
+    background-color: $lightPink;
     height: auto;
     
     .phone-info{
