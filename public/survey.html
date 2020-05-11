@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/5.0.2/pusher.min.js" integrity="sha256-vOxviKM/QBcMYxoY51Rbfk1ePvAeH/PNSRLv1egfhts=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha256-CIc5A981wu9+q+hmFYYySmOvsA3IsoX+apaYlL0j6fg=" crossorigin="anonymous"></script>
+    <title>javascript Development Environment Survey</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar">
+        <p class="name">Jing Jin</p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Portfolio</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <a href="survey.html">Survey</a>
+        </div>
+        <div class="menu" onclick="openNav()">
+            <div id="menu" class="bar1"></div>
+            <div id="menu" class="bar2"></div>
+            <div id="menu" class="bar3"></div>        
+        </div>
+    </header>
+
+    <main class="survey-container">
+        <div class="survey-body">
+            <div class="survey-title">
+                <span>JavaScript Development Environment Survey</span>
+            </div>
+
+            <div class="question-result">
+                <div class="question question1">
+                    <p><b>1. Which JS Editor do you use?</b></p>
+                    <form id= "surveyForm1">
+                        <p>
+                            <input type="radio" name="editor" id="atom" value="Atom">
+                            <label for="atom">Atom</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="editor"  id="webstorm" value="Webstorm">
+                            <label for="webstorm">WebStorm</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="editor"  id="vscode" value="Vscode">
+                            <label for="vscode">VS Code</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="editor"  id="other" value="Other">
+                            <label for="other">Other</label><br>
+                        </p>
+                        <input class="survey-button" id="btn1" type="submit" value="VOTE">
+                    </form>
+                </div>
+
+                <div class="result result1">
+                    <div id="result1" style="height: 250px; width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="question-result">
+                <div class="question question2">
+                    <p><b>2. Which Web Server do you use?</b></p>
+                    <form id= "surveyForm2">
+                        <p>
+                            <input type="radio" name="server" id="httpServer" value="HttpServer">
+                            <label for="httpServer">HTTP-Server</label><br> 
+                        </p>
+                        <p>
+                            <input type="radio" name="server" id="liveServer" value="LiveServer">              
+                            <label for="liveServer">Live-Server</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="server" id="express" value="Express">
+                            <label for="express">Express</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="server" id="other" value="Other">
+                            <label for="other">Other</label><br>
+                        </p>
+                        <input class="survey-button" id="btn2" type="submit" value="VOTE">
+                    </form>
+                </div>
+
+                <div class="result result2">
+                    <div id="result2"></div>
+                </div>
+            </div>
+
+            <div class="question-result">
+                <div class="question question3">
+                    <p><b>3. Which bundler do you use?</b></p>
+                    <form id= "surveyForm3">
+                        <p>
+                            <input type="radio" name="bundler" id="requirejs" value="Requirejs">
+                        <label for="requirejs">Require.js</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="bundler" id="browserify" value="Browserify">
+                            <label for="browserify">Browserify</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="bundler" id="webpack" value="Webpack">
+                            <label for="webpack">Webpack</label><br>
+                        </p>
+                        <p>
+                            <input type="radio" name="bundler" id="other" value="Other">
+                            <label for="other">Other</label><br>
+                        </p>
+                        <input class="survey-button" id="btn3" type="submit" value="VOTE">
+                    </form>
+                </div>
+
+                <div class="result result3">
+                    <div id="result3"></div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+     <!--Footer-->
+     <footer class="right-icons">
+        <div class="copytight-container">
+            <i class="far fa-copyright"></i>
+            <span>2019. Jing Jin</span>
+        </div>
+        <div class="icons-container">
+            <ul class="vl" style="list-style-type:none;">
+                <li><a class="linkedin" href="https://www.linkedin.com/in/jing-jin-40b72a93/"><i class="fab icon fa-linkedin-in" ></i></a></li>
+                <li><a class="github" href="https://github.com/jing-chu"><i class="fab icon fa-github" ></i></a></li>
+                <li><a class="stackoverflow" href="https://stackoverflow.com/users/12013640/jing?tab=profile"><i class="fab icon fa-stack-overflow" ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="resources/javascript/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+.survey-body{
+    width:70vw;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+.survey-title{
+    height: 3rem;
+    margin-bottom: 2rem;
+    span{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}
+.question-result{
+    width:70vw;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+}
+
+.question{
+    width:35vw;
+}
+
+.result{
+    width:65vw;
+}
+
+.surveyForm{
+    margin-bottom: 2rem;
+}
+
+.survey-button{
+    margin-bottom: 1rem;
+}

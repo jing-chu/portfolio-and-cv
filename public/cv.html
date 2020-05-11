@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <title>Jing-CV and Cover letter</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="navbar">
+        <p class="name">Jing Jin</p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Portfolio</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <a href="survey.html">Survey</a>
+        </div>
+        <div class="menu" onclick="openNav()">
+            <div id="menu" class="bar1"></div>
+            <div id="menu" class="bar2"></div>
+            <div id="menu" class="bar3"></div>        
+        </div>
+    </header>
+
+    <!--two TABs-->
+    <main class="tabs-container">
+        <div class="tab">
+            <button class="tablinks" onclick="openLetter()" id="defaultOpen">Cover Letter</button>
+            <button class="tablinks" onclick="openCV()">CV</button>
+        </div>
+
+        <!--covver letter TAB-->
+        <div id="Cover-Letter" class="tabcontent">
+            <div class="tab-left">
+                <img src="resources/jingS.jpg" alt="profile" class="profile">
+                <div class="about-me">
+                    <p class="info-type">ABOUT ME</p>
+                    <span class="info">Age: 36</span>
+                    <span class="info">Gender: Female</span>
+                    <span class="info">Nationality: Chinese</span>
+                    <span class="info">Driving licence: B</span>
+                </div>
+                <div class="cv-contact">
+                    <p class="info-type">CONTACT</p>
+                    <span class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                            3001 Heverlee, Belgium</span>
+                    <span class="info"><i class="fas fa-phone-volume"></i>+32 478/05/19/35</span>
+                    <span class="info"><i class="fas fa-at"></i>jinjingcs@gmail.com</span>
+                 </div>
+            </div>
+            <div class="tab-right">
+                <p class="letter"></p>
+                <p class="letter"></p>
+                <p class="letter"></p>
+                <p class="letter"><br></p>
+            </div>
+        </div> 
+        
+        <!--CV TAB-->
+        <div id="CV" class="tabcontent">
+            <!--left part of CV-->
+            <div class="tab-left">
+                <img src="resources/jingS.jpg" alt="profile" class="profile">
+                <div class="about-me">
+                    <p class="info-type">ABOUT ME</p>
+                    <span class="info">Age: 36</span>
+                    <span class="info">Gender: Female</span>
+                    <span class="info">Nationality: Chinese</span>
+                    <span class="info">Driving licence: B</span>
+                </div>
+                <div class="cv-contact">
+                    <p class="info-type">CONTACT</p>
+                    <span class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        3001 Heverlee, Belgium</span>
+                    <span class="info"><i class="fas fa-phone-volume"></i>+32 478/05/19/35</span>
+                    <span class="info"><i class="fas fa-at"></i>jinjingcs@gmail.com</span>
+                </div>
+            </div>
+
+            <!--right part of CV-->
+            <div class="tab-right">
+                <div class="experience">
+                    <span class="info-type">WORKING EXPERIENCE</span>
+                    <div class="info-box">
+                        <p class="info-title-city">
+                        <div class="info-title">
+                            <span class="info-bold">Group Secretary</span>
+                            <span class="info-date">Jun. 2012 - Dec. 2014</span>
+                        </div>
+                        <span class="info-bold">CAS-MPG Partner Institute for Computational Biology (PICB), Shanghai</span>
+                        </p>
+                        <ul class="detail-list">
+                            <li>Assist group leader to prepare materials and reports of project applications</li>
+                            <li>Manage files and archive for group</li>
+                            <li>Organize financial budgets, funds, and financial reimbursement</li>
+                            <li>Assist in booking reagents, consumables and instruments for laboratory</li>
+                            <li>Arrange reception for domestic and international visitors and provide service for them</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                            <p class="info-title-city">
+                            <div class="info-title">
+                                <span class="info-bold">Stuff Member</span>
+                                <span class="info-date">May 2009 - May 2012</span>
+                            </div>
+                            <span class="info-bold">Hunan Agricultural University, Changsha</span>
+                            </p>
+                            <ul class="detail-list">
+                                <li>Recruit native English and Japanese language teachers for university and coordinate them with College
+                                        of Foreign Language and International College</li>
+                                <li>Manage files and archives of all foreign teachers</li>
+                                <li>Plan and organize annual staff retreats or parties for foreign teacherst</li>
+                                <li>Participate and organize university's foreign affairs reception</li>
+                                <li>Organize English training program for young Chinese teachers of university</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="education">
+                    <span class="info-type">EDUCATION</span>
+                    <div class="info-box">
+                            <p class="info-title-city">
+                            <div class="info-title">
+                                <span class="info-bold">Master Degree, Agriculture Information Science</span>
+                                <span class="info-date">2009</span>
+                            </div>
+                            <span class="info-bold">Hunan Agriculture University, Changsha</span>
+                            </p>
+                            <ul class="detail-list">
+                                <li>Thesis: Research on Nondestructive Detection of Surface Defect of Potato Based on Machine Vision</li>    
+                            </ul>
+                    </div>
+                    <div class="info-box">
+                            <p class="info-title-city">
+                            <div class="info-title">
+                                <span class="info-bold">Bachelor Degree, Computer Science and Technology</span>
+                                <span class="info-date">2006</span>
+                            </div>
+                            <span class="info-bold">Hunan Agriculture University, Changsha</span>
+                            </p>
+                            <ul class="detail-list">
+                                <li>Thesis: Audio and Video Rental System</li>    
+                            </ul>
+                    </div>            
+                </div>
+                <div class="training">
+                    <span class="info-type">TRAINING</span>
+                    <div class="info-box">
+                            <p class="info-title-city">
+                            <div class="info-title">
+                                <span class="info-bold">Web Development</span>
+                                <span class="info-date">Sep. 2019 - Dec. 2019</span>
+                            </div>
+                            <span class="info-bold">BeCode, Genk Belgium</span>
+                            </p>
+                    </div>
+                    <div class="info-box">
+                            <p class="info-title-city">
+                            <div class="info-title">
+                                <span class="info-bold">Dutch Language, Level B2.1</span>
+                                <span class="info-date">Sep. 2018 - Jun. 2019</span>
+                            </div>
+                            <span class="info-bold">Mobyus Leuven, Leuven Belgium</span>
+                            </p>
+                    </div>
+                    <div class="info-box">
+                            <p class="info-title-city">
+                            <div class="info-title">
+                                <span class="info-bold">German Language, Level 2.1</span>
+                                <span class="info-date">Jun. 2015 - Jan. 2016</span>
+                            </div>
+                            <span class="info-bold">VHS-Pankow, Berlin Germany</span>
+                            </p>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="right-icons">
+        <div class="copytight-container">
+            <i class="far fa-copyright"></i>
+            <span>2019. Jing Jin</span>
+        </div>
+        <div class="icons-container">
+            <ul class="vl" style="list-style-type:none;">
+                <li><a class="linkedin" href="https://www.linkedin.com/in/jing-jin-40b72a93/"><i class="fab icon fa-linkedin-in" ></i></a></li>
+                <li><a class="github" href="https://github.com/jing-chu"><i class="fab icon fa-github" ></i></a></li>
+                <li><a class="stackoverflow" href="https://stackoverflow.com/users/12013640/jing?tab=profile"><i class="fab icon fa-stack-overflow" ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="resources/javascript/main.js"></script>
+</body>
+</html>
