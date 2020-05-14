@@ -21,6 +21,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 //Enable Cors
 app.use(cors());
 
+//Load the router module in the app
 app.use('/poll',poll);
 
 const port = 4000;

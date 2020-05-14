@@ -12,8 +12,9 @@ var pusher = new Pusher({
     encrypted: true
   });
 
+//handle GET request to '/poll' path
 router.get('/',(req, res) => {
-    Vote.find().then(votes => res.json({
+    Vote.find({question:'Q1'}).exec().then(votes => res.json({
         success:true,
         votes:votes
     }));
@@ -21,14 +22,16 @@ router.get('/',(req, res) => {
 
 router.post('/',(req, res) => {
     const newVote = {
-        editor: req.body.editor,
+        question: req.body.question,
+        answer: req.body.answer,
         points: 1
     }
 
     new Vote(newVote).save().then(vote => {
         pusher.trigger('editor-survey', 'editor-vote', {
             points: parseInt(vote.points),
-            editor: vote.editor
+            answer: vote.answer,
+            question: vote.question
     });
     return res.json({success:true, message:`Thanks for voting No.1`});
     })

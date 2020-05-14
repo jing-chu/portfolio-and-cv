@@ -38,14 +38,14 @@ function openLetter() {
 
  } 
 
-// Survey page
+// ------------------------- Survey page --------------------------------
 
 //Form1 submit event
-const form = document.getElementById('surveyForm1');
+const form1 = document.getElementById('surveyForm1');
 
-form.addEventListener("submit",(e) =>{
+form1.addEventListener("submit",(e) =>{
     const choice = document.querySelector('input[name=editor]:checked').value;
-    const data = {editor: choice};
+    const data = {question: "Q1", answer: choice};
 
     fetch('http://localhost:4000/poll',{
         method: 'post',
@@ -61,14 +61,16 @@ form.addEventListener("submit",(e) =>{
     e.preventDefault();
 });
 
+//
 fetch('http://localhost:4000/poll')
 .then(res => res.json())
 .then(data =>{
     const votes = data.votes;
     const totalVotes = votes.length;
     //Count vote points - acc/current
-    const voteCounts = votes.reduce((acc,vote) => 
-    ((acc[vote.editor] = (acc[vote.editor] || 0) + parseInt(vote.points)), acc),{});
+
+   const voteCounts = votes.reduce((acc,vote) => 
+   ((acc[vote.answer] = (acc[vote.answer] || 0) + parseInt(vote.points)), acc),{});
 
     let dataPoints = [
         { label: 'Atom', y: voteCounts.Atom},
@@ -76,6 +78,7 @@ fetch('http://localhost:4000/poll')
         { label: 'Vscode', y: voteCounts.Vscode},
         { label: 'Other', y: voteCounts.Other},
     ]
+    
     
     const chart1 = document.getElementById('result1');
     if(chart1) {
@@ -95,6 +98,7 @@ fetch('http://localhost:4000/poll')
         chart.render();
     
          // Enable pusher logging - don't include this in production
+         
          Pusher.logToConsole = true;
     
          var pusher = new Pusher('0e394f1ae6051d158c42', {
@@ -104,7 +108,7 @@ fetch('http://localhost:4000/poll')
          var channel = pusher.subscribe('editor-survey');
          channel.bind('editor-vote', function(data) {
             dataPoints = dataPoints.map(x => {
-                if(x.label == data.editor) {
+                if(x.label == data.answer) {
                     x.y += data.points;
                     return x;
                 } else {
@@ -113,6 +117,7 @@ fetch('http://localhost:4000/poll')
             });
             chart.render();
          });
+         
     }
 })
 
