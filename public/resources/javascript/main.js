@@ -151,7 +151,7 @@ fetch('http://localhost:4000/poll')
             animationEnabled: true,
             theme: 'theme1',
             title: {
-                text: `Total Votes ${totalVotes1.length}`
+                text: ''
             },
             data:[
                 {
@@ -193,7 +193,7 @@ fetch('http://localhost:4000/poll')
             animationEnabled: true,
             theme: 'theme1',
             title: {
-                text: `Total Votes ${totalVotes2.length}`
+                text: ''
             },
             data:[
                 {
@@ -234,7 +234,7 @@ fetch('http://localhost:4000/poll')
             animationEnabled: true,
             theme: 'theme1',
             title: {
-                text: `Total Votes ${totalVotes3.length}`
+                text: ''
             },
             data:[
                 {
