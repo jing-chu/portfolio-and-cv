@@ -25,4 +25,4 @@ app.use(cors());
 const port = process.env.PORT || 4000;
 
 //Start server
-app.listen(port,()=> console.log(`Server started on ${port}`));
+app.listen(port, '0.0.0.0', ()=> console.log(`Server started on ${port}`));
