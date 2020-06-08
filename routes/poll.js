@@ -11,32 +11,32 @@ var pusher = new Pusher({
     secret: '5bc0497c7dbd56efaa7b',
     cluster: 'eu',
     encrypted: true
-  });
+});
 
 //handle GET request to '/poll' path
-router.get('/',(req, res) => {
+router.get('/', (req, res) => {
     Vote.find().exec().then(votes => res.json({
-        success:true,
-        votes:votes
+        success: true,
+        votes: votes
     }));
 });
 
-router.post('/',(req, res) => {
-    let question = req.body.question   
-        const newVote = {
-            question: question,
-            answer: req.body.answer,
-            points: 1
-        }
+router.post('/', (req, res) => {
+    let question = req.body.question
+    const newVote = {
+        question: question,
+        answer: req.body.answer,
+        points: 1
+    }
 
-        new Vote(newVote).save().then(vote => {
-            pusher.trigger('js-survey', 'js-vote', {
-                points: parseInt(vote.points),
-                answer: vote.answer,
-                question: vote.question
+    new Vote(newVote).save().then(vote => {
+        pusher.trigger('js-survey', 'js-vote', {
+            points: parseInt(vote.points),
+            answer: vote.answer,
+            question: vote.question
         });
-        return res.json({success:true, message:`Thanks for voting ${question}`});
-        })
+        return res.json({ success: true, message: `Thanks for voting ${question}` });
+    })
 });
 
 

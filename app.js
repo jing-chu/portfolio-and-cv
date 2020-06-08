@@ -8,8 +8,9 @@ require('./config/db');
 
 const app = express();
 
-//Using self-defined model poll.js
+//Using self-defined model poll.js as API
 const poll = require('./routes/poll');
+app.use('/poll',poll);
 
 //Set public folder
 app.use(express.static(path.join(__dirname,'public')));
@@ -21,10 +22,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 //Enable Cors
 app.use(cors());
 
-//Load the router module in the app
-app.use('/poll',poll);
-
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 //Start server
 app.listen(port,()=> console.log(`Server started on ${port}`));
