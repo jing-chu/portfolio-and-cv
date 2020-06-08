@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    let question = req.body.question
+    const question = req.body.question
     const newVote = {
         question: question,
         answer: req.body.answer,
@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
             answer: vote.answer,
             question: vote.question
         });
-        return res.json({ success: true, message: `Thanks for voting ${question}` });
+        return res.json({ success: true, message: `Thanks for voting!` });
     })
 });
 
