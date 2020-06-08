@@ -49,7 +49,7 @@ form1.addEventListener("submit",(e) =>{
     const choice = document.querySelector('input[name=editor]:checked').value;
     const data = {question: "Q1", answer: choice};
 
-    fetch('/routes/poll',{
+    fetch('/poll',{
         method: 'post',
         body: JSON.stringify(data),
         headers: new Headers({
@@ -67,7 +67,7 @@ form2.addEventListener("submit",(e) =>{
     const choice = document.querySelector('input[name=server]:checked').value;
     const data = {question: "Q2", answer: choice};
 
-    fetch('/routes/poll',{
+    fetch('/poll',{
         method: 'post',
         body: JSON.stringify(data),
         headers: new Headers({
@@ -85,7 +85,7 @@ form3.addEventListener("submit",(e) =>{
     const choice = document.querySelector('input[name=bundler]:checked').value;
     const data = {question: "Q3", answer: choice};
 
-    fetch('/routes/poll',{
+    fetch('/poll',{
         method: 'post',
         body: JSON.stringify(data),
         headers: new Headers({
@@ -100,7 +100,7 @@ form3.addEventListener("submit",(e) =>{
 });
 
 //
-fetch('/routes/poll')
+fetch('/poll')
 .then(res => res.json())
 .then(data =>{
     const votes = data.votes;
