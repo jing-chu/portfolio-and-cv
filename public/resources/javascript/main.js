@@ -120,7 +120,9 @@ fetch('/poll')
   
     let voteCounts1=getfrequency(votes.filter(x=>{return x.question === 'Q1'}))
     let voteCounts2=getfrequency(votes.filter(x=>{return x.question === 'Q2'}))
-    let voteCounts3=getfrequency(votes.filter(x=>{return x.question === 'Q3'}))   
+    let voteCounts3=getfrequency(votes.filter(x=>{return x.question === 'Q3'}))  
+    
+    console.log("oooooooooooooooo"+JSON.stringify(voteCounts1))
 
     let dataPointsNo1 = [
         { label: 'Atom', y: voteCounts1.Atom},
@@ -146,7 +148,7 @@ fetch('/poll')
     
     const chart1 = document.getElementById('result1');
     if(chart1) {
-        let totalVotes1 = votes.filter(x =>{return x.question === "Q1"})
+        //let totalVotes1 = votes.filter(x =>{return x.question === "Q1"})
         const chart = new CanvasJS.Chart('result1',{
             animationEnabled: true,
             theme: 'theme1',
@@ -172,23 +174,27 @@ fetch('/poll')
          //Listen for EVENT on the channel: js-vote
          var channel = pusher.subscribe('js-survey');
          channel.bind('js-vote', function(data) {
-            dataPointsNo1 = dataPointsNo1.map(x => {
-                if(x.label == data.answer) {
-                    x.y += data.points;
-                    return x;
-                } else {
-                    return x;
-                }
-            });
-            chart.render();
+            if(data.question === "Q1"){
+                dataPointsNo1 = dataPointsNo1.map(x => {
+                    if(x.label == data.answer) {
+                        x.y += data.points;
+                        return x;
+                    } else {
+                        return x;
+                    }
+                });
+                const disBtn1 = document.getElementById("btn1").disabled=true
+                chart.render();
+            }
+            
          });
-         
+        
     }
 
 
     const chart2 = document.getElementById('result2');
     if(chart2) {
-        let totalVotes2 = votes.filter(x =>{return x.question === "Q2"})
+        //let totalVotes2 = votes.filter(x =>{return x.question === "Q2"})
         const chart = new CanvasJS.Chart('result2',{
             animationEnabled: true,
             theme: 'theme1',
@@ -212,24 +218,26 @@ fetch('/poll')
          
         var channel = pusher.subscribe('js-survey');
         channel.bind('js-vote', function(data) {
-             if(data.question === "Q2"){
+            if(data.question === "Q2"){
                 dataPointsNo2 = dataPointsNo2.map(x => {
-                if(x.label == data.answer) {
-                    x.y += data.points;
-                    return x;
-                } else {
-                    return x;
-                }
-            });
-            chart.render();
+                    if(x.label == data.answer) {
+                        x.y += data.points;
+                        return x;
+                    } else {
+                        return x;
+                    }
+                });
+                const disBtn2 = document.getElementById("btn2").disabled=true
+                chart.render();
             }
+            
         });
          
     }
 
     const chart3 = document.getElementById('result3');
     if(chart3) {
-        let totalVotes3 = votes.filter(x =>{return x.question === "Q3"})
+        //let totalVotes3 = votes.filter(x =>{return x.question === "Q3"})
         const chart = new CanvasJS.Chart('result3',{
             animationEnabled: true,
             theme: 'theme1',
@@ -257,15 +265,19 @@ fetch('/poll')
          //Listen for EVENT on the channel: js-vote
          var channel = pusher.subscribe('js-survey');
          channel.bind('js-vote', function(data) {
-            dataPointsNo3 = dataPointsNo3.map(x => {
-                if(x.label == data.answer) {
-                    x.y += data.points;
-                    return x;
-                } else {
-                    return x;
-                }
-            });
-            chart.render();
+            if(data.question === "Q3"){
+                dataPointsNo3 = dataPointsNo3.map(x => {
+                    if(x.label == data.answer) {
+                        x.y += data.points;
+                        return x;
+                    } else {
+                        return x;
+                    }
+                });
+                const disBtn3 = document.getElementById("btn3").disabled=true
+                chart.render();
+            }
+            
          });
          
     }
