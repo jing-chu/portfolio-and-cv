@@ -1,20 +1,7 @@
 
 # portfolio-and-cv
-Hello, my name is Jing Jin. This is [**my website**](https://whispering-tundra-34652.herokuapp.com/) and it shows what I have learned at BeCode.
+Hello, my name is Jing Jin. This is [**my website**](https://whispering-tundra-34652.herokuapp.com/).
 
-
-Future Milestones: 
-
-1. To make the **contact page** responsive on phone
-
-2. To finish the responsive design on other devices, like tablet and wide screen
-
-3. To add the JavaScript in program to add those functions
- **Off-Canvas Menu**,  
- **Toggleable Tabs**, 
- **An Arrow Menu Button**, 
-
-4. To polish the content of CV
 
 
 
