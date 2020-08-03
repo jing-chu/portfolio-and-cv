@@ -1,0 +1,22 @@
+@import "variables";
+@import "components";
+@import "header";
+@import "footer";
+@import "info-portfolios";
+@import "contact-container";
+@import "cv";
+@import "cover-letter";
+@import "tabs";
+@import "media-queries";
+@import "coverletter";
+@import "survey";
+
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
