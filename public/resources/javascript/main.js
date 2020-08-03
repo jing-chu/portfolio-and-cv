@@ -19,9 +19,6 @@ for (let i=0; i< overlay.length; i++) {
     };
 }
 
-console.log(overlay)
-console.log(projectImg)
-
 function openLetter() {
   document.getElementById("Cover-Letter").style.display = "flex";
   document.getElementById("CV").style.display = "none";
@@ -121,8 +118,6 @@ fetch('/poll')
     let voteCounts1=getfrequency(votes.filter(x=>{return x.question === 'Q1'}))
     let voteCounts2=getfrequency(votes.filter(x=>{return x.question === 'Q2'}))
     let voteCounts3=getfrequency(votes.filter(x=>{return x.question === 'Q3'}))  
-    
-    console.log("oooooooooooooooo"+JSON.stringify(voteCounts1))
 
     let dataPointsNo1 = [
         { label: 'Atom', y: voteCounts1.Atom},
